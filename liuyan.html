@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="liuyan.js"></script>
+    <script src="huoqu.js"></script>
+</head>
+    <style>
+        *{
+        	padding: 0;
+        	margin: 0;
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            border: none;
+        }
+        body{
+            background: #dfdfd;
+        }
+        .box{
+        	width: 860px;
+        	height: 500px;
+        	margin: 50px auto;
+        }
+        .left{
+        	width: 500px;
+        	height: 500px;
+        	border: 1px solid gray;
+        	float: left;
+        	margin-right: 40px;
+            overflow: hidden;
+        }
+        .right{
+        	width: 280px;
+        	height: 500px;
+        	background: skyblue;
+        	float: left;
+        	padding-left: 20px;
+        }
+        .top>h4{
+        	margin-top: 16px;
+        	float: left;
+        	display: block;
+        }
+        .top>input{
+        	width:210px;
+        	height: 30px;
+        	margin-top: 12px; 
+            border-radius: 5px;
+        }
+        .center{
+        	margin-top: 20px;
+        }
+        .center>textarea{
+        	width: 260px;
+        	height: 220px;
+            border-radius: 5px;
+        }
+        .bottom>button{
+        	float: right;
+        	margin-right: 20px;
+        	margin-top: 20px;
+        	width: 80px;
+        	height: 30px;
+        	border-radius: 20px;
+        }
+        ul>li{
+            width: 460px;
+            padding: 12px;
+            border-bottom:1px solid gray;
+            position: relative;
+            margin:0 auto;
+        }
+        .box img{
+            width: 80px;
+            height: 100px;
+            position: absolute;
+        }
+        .box11{
+            height: 100px;
+            width: auto;
+            /* background: gray; */
+            margin-left: 80px;
+            position: relative;
+            padding: 10px;
+            box-sizing: border-box;
+            font-size: 12px;
+        }
+        .rest{
+            font-size: 14px;
+            color: gray;
+        }
+     
+    </style>
+<body>
+<div class="box">
+	<ul class="left">
+		<li>
+            <img src="img/big.jpg" alt="">
+			<div class="box11">
+				<h4>张三</h4>
+				<p>这是张三的留言</p>
+			</div>
+		</li>
+	</ul>
+    <div class="right">
+	    <div class="top">
+		    <h4 class="name">姓名：</h4>
+		    <input type="text" class='username' name='username' placeholder="请输入姓名" >
+	    </div>
+	    <div class="center">
+		    <h4 class="liu">留言区：</h4>
+		    <textarea class='liuyannei' type="text" placeholder="请输入您的留言" ></textarea>
+            <div class="rest">还可以输入<span>120</span>字</div>
+	    </div>
+        <div class="bottom">
+	        <button class="tijiao">提交</button>
+	    </div>
+</div>
+</div>
+
+
+	
+</body>
+</html>
